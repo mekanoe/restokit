@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/kayteh/saas-inv/restokit"
+	"github.com/kayteh/restokit"
 )
 
 func testGetVersion(url, version string, client *http.Client, t *testing.T) (*http.Response, error) {

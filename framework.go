@@ -9,8 +9,7 @@ import (
 	"github.com/valyala/fasthttp"
 
 	"github.com/Sirupsen/logrus"
-	mw "github.com/kayteh/saas-inv/restokit/middleware"
-	"github.com/kayteh/saas-inv/util"
+	mw "github.com/kayteh/restokit/middleware"
 	"github.com/segmentio/ksuid"
 )
 
@@ -49,10 +48,10 @@ func NewRestokit(addr string) *Restokit {
 		addr:           addr,
 	}
 
-	prod := util.Getenvdef("IS_PROD", false).Bool()
-	if prod {
-		logrus.SetFormatter(&logrus.JSONFormatter{})
-	}
+	// prod := util.Getenvdef("IS_PROD", false).Bool()
+	// if prod {
+	// 	logrus.SetFormatter(&logrus.JSONFormatter{})
+	// }
 
 	r.AddGlobalMiddleware(r.logging)
 
