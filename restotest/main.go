@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/kayteh/saas-inv/restokit"
-	"github.com/kayteh/saas-inv/restokit/restotest/api"
+	"github.com/kayteh/restokit"
+	"github.com/kayteh/restokit/restotest/api"
 )
 
 func main() {

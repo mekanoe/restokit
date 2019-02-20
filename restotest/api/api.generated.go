@@ -8,7 +8,7 @@ package api
 
 import (
 	"github.com/buaazp/fasthttprouter"
-	mw "github.com/kayteh/saas-inv/restokit/middleware"
+	mw "github.com/kayteh/restokit/middleware"
 )
 
 // FetchAPIRoutes is a **generated** function that takes a router, and injects the api routes into it.

@@ -8,9 +8,9 @@ import (
 	"github.com/buaazp/fasthttprouter"
 	"github.com/valyala/fasthttp"
 
-	"github.com/Sirupsen/logrus"
 	mw "github.com/kayteh/restokit/middleware"
 	"github.com/segmentio/ksuid"
+	"github.com/sirupsen/logrus"
 )
 
 const Version = "1.0.0"
